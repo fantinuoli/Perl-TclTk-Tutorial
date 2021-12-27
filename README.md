@@ -64,7 +64,9 @@ make -C tk8.6.11/macosx embedded CFLAGS_OPTIMIZE="-O2 -mmacosx-version-min=10.11
 This will generate a `Tcl.framework` and a `Tk.framework`. Put them in the folder 'Frameworks' inside our APP structure indicated above.
 
 ### Linking the Application to the desired (portable) Tcl/Tk installation
-In order to link the Perl MyApp.pl script (and later our executable) to the Tcl/Tk binaries in our APP structure, we need to tell Perl to do this. When the Perl script/executable is run, Tcl.pm will link to the Tcl/Tk that has been used during installation. Since we want to deploy the APP on other machines, in a self-contained environment (i.e. shipping the Tcl/Tk binaries togheter with our APP), we need to explicitely tell our APP where to search for Tcl/Tk. A `BEGIN` block will take care to link our application to the desired (shipped) Tcl/Tk binary. My `BEGING` block is probably not the best way to achieve this, but it works. Unfortunately no explanation is to be found in the Tcl.pm module or on the Web. See script `linkApp2TclTk.pl` for my solution. The `BEGIN` block takes care of the OS and of the APP file organisation on Windows and macOS. It will be used also to run all examples of this tutorial. If the block is omitted, the Tcl.pm module will link to the Tcl/Tk binary seen at installation time. I use this Tcl/Tk biniaries also in developement to be sure to develop the application with the same Tcl/Tk binaries that will be shipped with the APP.
+Run the barebone script `app.pl` to see Perl calling the Tcl/Tk version in our data structure. A GUI will popup with information about the linked Tcl/Tk.
+
+
 
 
 
