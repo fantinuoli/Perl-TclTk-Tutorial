@@ -72,7 +72,8 @@ BEGIN {
             $DirectoryFiles = "$appBaseDirectory/macOS/files";
             print "Dir application files: $DirectoryFiles\n";   
             
-            my $dirFrameworks = "$appBaseDirectory/macOS/Frameworks";
+            #my $dirFrameworks = "$appBaseDirectory/macOS/FrameworksM1";#if you are using an arm macOS
+            my $dirFrameworks = "$appBaseDirectory/macOS/Frameworks";#if you are using a intel macOS
             my $Tcl           = "$dirFrameworks/Tcl.framework/Tcl";
 
             print "Dir Frameworks: $dirFrameworks" . "/\n";

@@ -15,7 +15,7 @@
 TK_VERSION='8.6'
 TK_MAJOR_VERSION='8'
 TK_MINOR_VERSION='6'
-TK_PATCH_LEVEL='.12'
+TK_PATCH_LEVEL='.11'
 
 # -D flags for use with the C compiler.
 TK_DEFS='-DPACKAGE_NAME=\"tk\" -DPACKAGE_TARNAME=\"tk\" -DPACKAGE_VERSION=\"8.6\" -DPACKAGE_STRING=\"tk\ 8.6\" -DPACKAGE_BUGREPORT=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DUSE_THREAD_ALLOC=1 -D_REENTRANT=1 -D_THREAD_SAFE=1 -DHAVE_PTHREAD_ATTR_SETSTACKSIZE=1 -DHAVE_PTHREAD_ATFORK=1 -DTCL_THREADS=1 -DMODULE_SCOPE=extern\ __attribute__\(\(__visibility__\(\"hidden\"\)\)\) -DHAVE_HIDDEN=1 -DMAC_OSX_TCL=1 -DHAVE_COREFOUNDATION=1 -DHAVE_CAST_TO_UNION=1 -DTCL_SHLIB_EXT=\".dylib\" -DNDEBUG=1 -DTCL_CFG_OPTIMIZED=1 -DTCL_WIDE_INT_IS_LONG=1 -DHAVE_SYS_TIME_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_INTPTR_T=1 -DHAVE_UINTPTR_T=1 -DHAVE_PW_GECOS=1 -DHAVE_AVAILABILITYMACROS_H=1 -DHAVE_WEAK_IMPORT=1 -D_DARWIN_C_SOURCE=1 -DMAC_OSX_TK=1 -DTK_FRAMEWORK=1 '
@@ -53,7 +53,7 @@ TK_LIB_FLAG='-framework Tk'
 
 # String to pass to linker to pick up the Tk library from its
 # build directory.
-TK_BUILD_LIB_SPEC='-F/Users/fc/Desktop/TclTk_6.9.11_ARM_Monterey_mypatch/build/tk/Deployment -framework Tk'
+TK_BUILD_LIB_SPEC='-F/Users/fc/Desktop/TclTk_6.9.11_INTEL_MontereyPatchOpenDialog2/build/tk/Deployment -framework Tk'
 
 # String to pass to linker to pick up the Tk library from its
 # installed directory.
@@ -69,7 +69,7 @@ TK_INCLUDE_SPEC='-I/Library/Frameworks/Tk.framework/Versions/8.6/Headers'
 # different place than the directory containing the source files, this
 # points to the location of the sources, not the location where Tk was
 # compiled.
-TK_SRC_DIR='/Users/fc/Desktop/TclTk_6.9.11_ARM_Monterey_mypatch/tk8.6.11'
+TK_SRC_DIR='/Users/fc/Desktop/TclTk_6.9.11_INTEL_MontereyPatchOpenDialog2/tk8.6.11'
 
 # Needed if you want to make a 'fat' shared library library
 # containing tk objects or link a different wish.
@@ -84,14 +84,14 @@ TK_STUB_LIB_FLAG='-ltkstub8.6'
 
 # String to pass to linker to pick up the Tk stub library from its
 # build directory.
-TK_BUILD_STUB_LIB_SPEC='-L/Users/fc/Desktop/TclTk_6.9.11_ARM_Monterey_mypatch/build/tk/Deployment -ltkstub8.6'
+TK_BUILD_STUB_LIB_SPEC='-L/Users/fc/Desktop/TclTk_6.9.11_INTEL_MontereyPatchOpenDialog2/build/tk/Deployment -ltkstub8.6'
 
 # String to pass to linker to pick up the Tk stub library from its
 # installed directory.
 TK_STUB_LIB_SPEC='-L/Library/Frameworks/Tk.framework/Versions/8.6 -ltkstub8.6'
 
 # Path to the Tk stub library in the build directory.
-TK_BUILD_STUB_LIB_PATH='/Users/fc/Desktop/TclTk_6.9.11_ARM_Monterey_mypatch/build/tk/Deployment/libtkstub8.6.a'
+TK_BUILD_STUB_LIB_PATH='/Users/fc/Desktop/TclTk_6.9.11_INTEL_MontereyPatchOpenDialog2/build/tk/Deployment/libtkstub8.6.a'
 
 # Path to the Tk stub library in the install directory.
 TK_STUB_LIB_PATH='/Library/Frameworks/Tk.framework/Versions/8.6/libtkstub8.6.a'
